@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vídeo Cavalo</title>
+  <link rel="stylesheet" href="staly.css">
+</head>
+<body>
 
+  <div class="container">
+    <h1>Pessoa montando um cavalo</h1>
+
+    <video id="videoCavalo" controls autoplay loop>
+      <!-- Você pode trocar por um vídeo local: horse.mp4 -->
+      <source src="horse.mp4" type="video/mp4">
+
+      <!-- Ou usar um link online (exemplo) -->
+      <!-- <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> -->
+
+      Seu navegador não suporta vídeo.
+    </video>
+
+    <div class="buttons">
+      <button onclick="playVideo()">▶ Play</button>
+      <button onclick="pauseVideo()">⏸ Pause</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
