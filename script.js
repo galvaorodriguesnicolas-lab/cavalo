@@ -1,10 +1,6 @@
+const button = document.getElementById("changeTitle");
+const title = document.querySelector("h1");
 
-const video = document.getElementById("videoCavalo");
-
-function playVideo() {
-  video.play();
-}
-
-function pauseVideo() {
-  video.pause();
-}
+button.addEventListener("click", () => {
+    title.textContent = "Os Cavalos São Animais Incríveis!";
+});
